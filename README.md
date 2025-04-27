@@ -20,17 +20,16 @@ The motor input speeds were set to 600, 1200, 1800 rpm, and the brake damping (i
 **The data file format is described as follows：**  
 
 The data from Test Rig A is stored in 7 folders for single fault, double fault and triple fault cases. The data are stored in .mat format files, and the naming scheme for single-fault data is “<component name>-<status name>\_<RPM>\_<load>\_<time>.mat”, and the naming scheme for multiple-fault type is “<component name 1><status name 1>-<component name 2><state name 2>\_<RPM>\_<Load>\_<Time>.mat”. Each data file contains two matrices, ”data_recorded“and “data_rectime”, where the size of the “data_recorded” matrix is L\*3, L means the length of signals, the first column is the axial sensor signal, the second column is the radial sensor signal. The third column is the speed encoder signal. The size of "data_recorded” is L\*3, which is the time-stamp of the corresponding data.
-![test_rig_A](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_A.jpg)
+![test_rig_A](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_A.jpg)  
 
 
 **==================== TEST RIG B ====================**  
 Test Rig B contains a planetary gearbox and three parallel gearboxes. The same faulty components are used on Test Rig B as on Test Rig A (G2 contains only normal level faults).
-![test_rig_B.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_B.jpg)
-
+![test_rig_B.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_B.jpg)  
 **The experimental setup was as follows：**  
 
 Test Rig B was set up with no load and speed settings of 600, 1200 and 1800 rpm. The experiments on Test Rig B collected single faults data including 36 classes ; two-compound faults data including 48 classes per case (G1-B1, G1-G2, and G2-B1) for a total of 144 types; and three-compound faults G1-G2-B1 including 36 calsses. 11 sensors were installed on Test Rig B, including five acceleration sensors, two current sensors, one microphone, one torque sensor and two homemade sensors. The sampling frequency of the torque sensor and the homemade sensors was 25.6 kHz, while the other sensors were sampled at 51.2 kHz. The length of the data collected was approximately 900 seconds.
-![sensor_channels.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/sensor_channels.jpg)
+![sensor_channels.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/sensor_channels.jpg)  
 
 **The data file format is described as follows：**  
 
