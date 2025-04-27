@@ -4,7 +4,7 @@ This dataset was provided by Dr. Hao Chen from Prof. Yang Zhixin's team at the U
 The dataset contains multi-sensor monitoring data for gears and bearings, and the data acquisition experiments were accomplished on two experimental platforms named Test Rig A and Test Rig B, respectively.
 
 ** TEST RIG A **
-Test Rig A is driven by a motor and the transmission system comprises a planetary gearbox and a parallel gearbox. The fault components include the sun gear G1 in the planetary gearbox, the gear G2 on the second stage drive shaft in the parallel gearbox and the bearing B1 of the second stage drive shaft. At the other end of the system is a magnetic brake. 
+Test Rig A is driven by a motor and the transmission system comprises a planetary gearbox and a parallel gearbox. The fault components include the sun gear G1 in the planetary gearbox, the gear G2 on the second stage drive shaft in the parallel gearbox, and the bearing B1 of the second stage drive shaft. At the other end of the system is a magnetic brake. 
 
 **The following faulty parts are used on Test Rig A：**
 
@@ -20,7 +20,7 @@ The motor input speeds were set to 600, 1200, 1800 rpm, and the brake damping (i
 
 **The data file format is described as follows：**
 
-The data from Test Rig A is stored in 7 folders for single fault, double fault and triple fault cases. The data are stored in .mat format files, and the naming scheme for single-fault data is “<component name>-<status name>\_<RPM>\_<load>\_<time>.mat”, and the naming scheme for multiple-fault type is “<component name 1><status name 1>-<component name 2><state name 2>\_<RPM>\_<Load>\_<Time>.mat”. Each data file contains two matrices, ”data_recorded“and “data_rectime”, where the size of “data_recorded” matrix is L\*3, L means the length of signals, the the first column is the axial sensor signal, the second column is the radial sensor signal. The third column is the speed encoder signal. The size of "data_recorded” is L\*3, which is the time-stamp of the corresponding data.
+The data from Test Rig A is stored in 7 folders for single fault, double fault and triple fault cases. The data are stored in .mat format files, and the naming scheme for single-fault data is “<component name>-<status name>\_<RPM>\_<load>\_<time>.mat”, and the naming scheme for multiple-fault type is “<component name 1><status name 1>-<component name 2><state name 2>\_<RPM>\_<Load>\_<Time>.mat”. Each data file contains two matrices, ”data_recorded“and “data_rectime”, where the size of the “data_recorded” matrix is L\*3, L means the length of signals, the first column is the axial sensor signal, the second column is the radial sensor signal. The third column is the speed encoder signal. The size of "data_recorded” is L\*3, which is the time-stamp of the corresponding data.
 ![image](https://github.com/CH-0909/UM-Gearbox-Dataset/images/test_rig_A.jpg) 
 
 
@@ -35,6 +35,6 @@ Test Rig B was set up with no load and speed settings of 600, 1200 and 1800 rpm.
 
 **The data file format is described as follows：**
 
-The data from Test Rig B is stored as .mat format files in 1 folder for total 219 files. The single fault data is named as “<component name><status name>\_<RPM>\_<load>.mat” and the multiple fault data is named as “<component name 1>-<component name 2>\_<status name 1>-<status name 2>\_<RPM>\_ <load>.mat” and “<component name 1>-<component name 2>-<component name 3>\_<status name 1>-<status name 2>-<status name 3>\_<RPM>\_ <load>.mat”. Each data file contains three data matrices, “Data1”, “Data2” and “Statistics”, of which the size of the “Data1” matrix is L\*8, 8 columns of data correspond to sensors 3,4,5,6,1,2,7,8 in turn; the size of the “Data2” matrix is L\*3, 3 columns of data correspond to sensors 9,10,11 in turn; the size of the “Statistics”  is 11\*120\*4, means that the 11 channel signals (Data1 and Data2 are totally consists of 11 channels) are divided into 120 slices to calculate the statistics, including: peak-to-peak value, root mean square (RMS), kurtosis, and frequency center of gravity.
+The data from Test Rig B is stored as .mat format files in 1 folder for a total of 219 files. The single fault data is named as “<component name><status name>\_<RPM>\_<load>.mat” and the multiple fault data is named as “<component name 1>-<component name 2>\_<status name 1>-<status name 2>\_<RPM>\_ <load>.mat” and “<component name 1>-<component name 2>-<component name 3>\_<status name 1>-<status name 2>-<status name 3>\_<RPM>\_ <load>.mat”. Each data file contains three data matrices, “Data1”, “Data2” and “Statistics”, of which the size of the “Data1” matrix is L\*8, 8 columns of data correspond to sensors 3,4,5,6,1,2,7,8 in turn; the size of the “Data2” matrix is L\*3, 3 columns of data correspond to sensors 9,10,11 in turn; the size of the “Statistics”  is 11\*120\*4, means that the 11 channel signals (Data1 and Data2 are totally consists of 11 channels) are divided into 120 slices to calculate the statistics, including: peak-to-peak value, root mean square (RMS), kurtosis, and frequency center of gravity.
 
 
