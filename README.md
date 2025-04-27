@@ -3,7 +3,7 @@ This dataset was provided by Dr. Hao Chen from Prof. Yang Zhixin's team at the U
 
 The dataset contains multi-sensor monitoring data for gears and bearings, and the data acquisition experiments were accomplished on two experimental platforms named Test Rig A and Test Rig B, respectively.
 
-** TEST RIG A **
+**==================== TEST RIG A ====================**
 Test Rig A is driven by a motor and the transmission system comprises a planetary gearbox and a parallel gearbox. The fault components include the sun gear G1 in the planetary gearbox, the gear G2 on the second stage drive shaft in the parallel gearbox, and the bearing B1 of the second stage drive shaft. At the other end of the system is a magnetic brake. 
 
 **The following faulty parts are used on Test Rig A：**
@@ -24,7 +24,7 @@ The data from Test Rig A is stored in 7 folders for single fault, double fault a
 ![test_rig_A](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_A.jpg)
 
 
-** TEST RIG B **
+**==================== TEST RIG B ====================**
 Test Rig B contains a planetary gearbox and three parallel gearboxes. The same faulty components are used on Test Rig B as on Test Rig A (G2 contains only normal level faults).
 ![test_rig_B.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_B.jpg)
 
@@ -36,5 +36,17 @@ Test Rig B was set up with no load and speed settings of 600, 1200 and 1800 rpm.
 **The data file format is described as follows：**
 
 The data from Test Rig B is stored as .mat format files in 1 folder for a total of 219 files. The single fault data is named as “<component name><status name>\_<RPM>\_<load>.mat” and the multiple fault data is named as “<component name 1>-<component name 2>\_<status name 1>-<status name 2>\_<RPM>\_ <load>.mat” and “<component name 1>-<component name 2>-<component name 3>\_<status name 1>-<status name 2>-<status name 3>\_<RPM>\_ <load>.mat”. Each data file contains three data matrices, “Data1”, “Data2” and “Statistics”, of which the size of the “Data1” matrix is L\*8, 8 columns of data correspond to sensors 3,4,5,6,1,2,7,8 in turn; the size of the “Data2” matrix is L\*3, 3 columns of data correspond to sensors 9,10,11 in turn; the size of the “Statistics”  is 11\*120\*4, means that the 11 channel signals (Data1 and Data2 are totally consists of 11 channels) are divided into 120 slices to calculate the statistics, including: peak-to-peak value, root mean square (RMS), kurtosis, and frequency center of gravity.
+
+**==================== Dataset Download ====================**
+This dataset can be downloaded through two channels：
+<1> NAS system of our group （Suggested for overseas users）
+Link: http://QuickConnect.to/Smart5001
+Account: DatasetAtESWA
+Password: Smart2025
+File Station -> DatasetAtESWA -> please download the data you want!
+
+<2> A data backup link on Baidu.com disk
+Test Rig A Dataset: https://pan.baidu.com/s/1SHAE6HzOd3mmMPHQcOD6zA?pwd=v3tt      password: v3tt
+Test Rig B Dataset: https://pan.baidu.com/s/1rOezeU2fnMv1p-mE-4qSWA?pwd=977k      password: 977k 
 
 
