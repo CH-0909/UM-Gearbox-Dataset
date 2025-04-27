@@ -21,7 +21,7 @@ The motor input speeds were set to 600, 1200, 1800 rpm, and the brake damping (i
 **The data file format is described as follows：**
 
 The data from Test Rig A is stored in 7 folders for single fault, double fault and triple fault cases. The data are stored in .mat format files, and the naming scheme for single-fault data is “<component name>-<status name>\_<RPM>\_<load>\_<time>.mat”, and the naming scheme for multiple-fault type is “<component name 1><status name 1>-<component name 2><state name 2>\_<RPM>\_<Load>\_<Time>.mat”. Each data file contains two matrices, ”data_recorded“and “data_rectime”, where the size of the “data_recorded” matrix is L\*3, L means the length of signals, the first column is the axial sensor signal, the second column is the radial sensor signal. The third column is the speed encoder signal. The size of "data_recorded” is L\*3, which is the time-stamp of the corresponding data.
-![image]([https://github.com/CH-0909/UM-Gearbox-Dataset/images/test_rig_A.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_A.jpg)) 
+![image](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_A.jpg)
 
 
 ** TEST RIG B **
