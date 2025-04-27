@@ -3,6 +3,7 @@ This dataset was provided by Dr. Hao Chen from Prof. Yang Zhixin's team at the U
 
 The dataset contains multi-sensor monitoring data for gears and bearings, and the data acquisition experiments were accomplished on two experimental platforms named Test Rig A and Test Rig B, respectively.
 
+** TEST RIG A **
 Test Rig A is driven by a motor and the transmission system comprises a planetary gearbox and a parallel gearbox. The fault components include the sun gear G1 in the planetary gearbox, the gear G2 on the second stage drive shaft in the parallel gearbox and the bearing B1 of the second stage drive shaft. At the other end of the system is a magnetic brake. 
 
 **The following faulty parts are used on Test Rig A：**
@@ -20,8 +21,9 @@ The motor input speeds were set to 600, 1200, 1800 rpm, and the brake damping (i
 **The data file format is described as follows：**
 
 The data from Test Rig A is stored in 7 folders for single fault, double fault and triple fault cases. The data are stored in .mat format files, and the naming scheme for single-fault data is “<component name>-<status name>\_<RPM>\_<load>\_<time>.mat”, and the naming scheme for multiple-fault type is “<component name 1><status name 1>-<component name 2><state name 2>\_<RPM>\_<Load>\_<Time>.mat”. Each data file contains two matrices, ”data_recorded“and “data_rectime”, where the size of “data_recorded” matrix is L\*3, L means the length of signals, the the first column is the axial sensor signal, the second column is the radial sensor signal. The third column is the speed encoder signal. The size of "data_recorded” is L\*3, which is the time-stamp of the corresponding data.
+![image](https://github.com/用户名/仓库名/blob/分支名/文件夹名/图片文件名.png) 
 
-
+** TEST RIG B **
 Test Rig B contains a planetary gearbox and three parallel gearboxes. The same faulty components are used on Test Rig B as on Test Rig A (G2 contains only normal level faults).
 
 **The experimental setup was as follows：**
