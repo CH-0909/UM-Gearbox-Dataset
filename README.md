@@ -1,7 +1,7 @@
 # UM-Gearbox-Dataset
 This dataset was provided by Dr. Hao Chen from Prof. Yang Zhixin's team at the University of Macau.
-
 The dataset contains multi-sensor monitoring data for gears and bearings, and the data acquisition experiments were accomplished on two experimental platforms named Test Rig A and Test Rig B, respectively.
+The same project is also shared at https://gitcode.com/CH-0909/UM_Gearbox_Dataset.git and will be followed by higher priority updates.
 
 **==================== TEST RIG A ====================**  
 Test Rig A is driven by a motor and the transmission system comprises a planetary gearbox and a parallel gearbox. The fault components include the sun gear G1 in the planetary gearbox, the gear G2 on the second stage drive shaft in the parallel gearbox, and the bearing B1 of the second stage drive shaft. At the other end of the system is a magnetic brake. 
