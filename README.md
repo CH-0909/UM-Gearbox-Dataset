@@ -26,7 +26,7 @@ The data from Test Rig A is stored in 7 folders for single fault, double fault a
 
 ** TEST RIG B **
 Test Rig B contains a planetary gearbox and three parallel gearboxes. The same faulty components are used on Test Rig B as on Test Rig A (G2 contains only normal level faults).
-![image](https://github.com/CH-0909/UM-Gearbox-Dataset/images/test_rig_B.jpg) 
+![image]([https://github.com/CH-0909/UM-Gearbox-Dataset/images/test_rig_B.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/test_rig_B.jpg)) 
 
 **The experimental setup was as follows：**
 
