@@ -31,7 +31,7 @@ Test Rig B contains a planetary gearbox and three parallel gearboxes. The same f
 **The experimental setup was as follows：**
 
 Test Rig B was set up with no load and speed settings of 600, 1200 and 1800 rpm. The experiments on Test Rig B collected single faults data including 36 classes ; two-compound faults data including 48 classes per case (G1-B1, G1-G2, and G2-B1) for a total of 144 types; and three-compound faults G1-G2-B1 including 36 calsses. 11 sensors were installed on Test Rig B, including five acceleration sensors, two current sensors, one microphone, one torque sensor and two homemade sensors. The sampling frequency of the torque sensor and the homemade sensors was 25.6 kHz, while the other sensors were sampled at 51.2 kHz. The length of the data collected was approximately 900 seconds.
-![sensor_channels.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/images/sensor_channels.jpg) 
+![sensor_channels.jpg](https://github.com/CH-0909/UM-Gearbox-Dataset/blob/main/images/sensor_channels.jpg)
 
 **The data file format is described as follows：**
 
